@@ -59,6 +59,7 @@ module ZendeskAPI
           :user_agent => "ZendeskAPI Ruby #{ZendeskAPI::VERSION}"
         },
         :request => {
+          :timeout => 10,
           :open_timeout => 10
         },
         :url => @url
